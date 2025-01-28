@@ -1,0 +1,258 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2B Industrial Fire and Explosion Protection</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            display: inline;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        #hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(to right, #007bff, #0056b3);
+            color: white;
+        }
+
+        #hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        #hero p {
+            font-size: 1.25rem;
+        }
+
+        .functional-section {
+            padding: 2rem;
+            margin: 2rem 0;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+
+        form {
+            display: grid;
+            gap: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        input, select, textarea, button {
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .catalog-item, .manufacturer, article {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+            background-color: #f8f9fa;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #343a40;
+            color: white;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Industrial Safety Solutions</div>
+            <ul class="menu">
+                <li><a href="#search">Search</a></li>
+                <li><a href="#catalog">Catalog</a></li>
+                <li><a href="#manufacturers">Manufacturers</a></li>
+                <li><a href="#technical-info">Technical Info</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#knowledge">Knowledge Base</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Your Partner in Industrial Safety</h1>
+            <p>Explore top-rated fire and explosion protection systems for industries worldwide.</p>
+        </section>
+
+        <section id="search" class="functional-section">
+            <h2>Search System</h2>
+            <form>
+                <div class="form-group">
+                    <label for="category">Category:</label>
+                    <select id="category">
+                        <option value="sugar">Sugar</option>
+                        <option value="grain">Grain</option>
+                        <option value="wood">Wood</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="manufacturer">Manufacturer:</label>
+                    <input type="text" id="manufacturer">
+                </div>
+
+                <div class="form-group">
+                    <label for="price-range">Price Range:</label>
+                    <input type="text" id="price-range">
+                </div>
+
+                <button type="submit">Search</button>
+            </form>
+        </section>
+
+        <section id="catalog" class="functional-section">
+            <h2>Product Catalog</h2>
+            <div class="catalog-item">
+                <h3>Product Name</h3>
+                <p>Detailed description...</p>
+                <button>View Details</button>
+            </div>
+        </section>
+
+        <section id="manufacturers" class="functional-section">
+            <h2>Manufacturers</h2>
+            <div class="manufacturer">
+                <h3>Manufacturer Name</h3>
+                <p>Details about the manufacturer...</p>
+            </div>
+        </section>
+
+        <section id="technical-info" class="functional-section">
+            <h2>Technical Information</h2>
+            <ul>
+                <li><a href="#">Normative Documents</a></li>
+                <li><a href="#">Installation Instructions</a></li>
+                <li><a href="#">Parts Catalogs</a></li>
+            </ul>
+        </section>
+
+        <section id="news" class="functional-section">
+            <h2>Industry News</h2>
+            <article>
+                <h3>Latest Standards Update</h3>
+                <p>Details about the news...</p>
+            </article>
+        </section>
+
+        <section id="contact" class="functional-section">
+            <h2>Contact Us</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message"></textarea>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <section id="knowledge" class="functional-section">
+            <h2>Knowledge Base</h2>
+            <ul>
+                <li><a href="#">Technical Articles</a></li>
+                <li><a href="#">Video Materials</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Industrial Safety Solutions. All rights reserved.</p>
+    </footer>
+</body>
+</html>
