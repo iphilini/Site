@@ -3,41 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B2B Industrial Fire and Explosion Protection</title>
+    <title>Industrial Equipment Solutions</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         /* Global Styles */
         body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #121212;
-            color: #EAEAEA;
-            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
         }
 
         header {
-            background-color: #1E1E1E;
-            color: #F5F5F5;
-            padding: 1.5rem 2rem;
+            background-color: #001F3D;
+            color: #fff;
+            padding: 20px 30px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
 
         .logo {
             font-size: 1.8rem;
             font-weight: bold;
-            color: #F5F5F5;
+            color: #fff;
         }
 
         .menu {
             list-style: none;
             display: flex;
             gap: 2rem;
-            margin: 0;
-            padding: 0;
         }
 
         .menu li {
@@ -45,228 +41,193 @@
         }
 
         .menu a {
-            color: #F5F5F5;
+            color: #fff;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 500;
             transition: color 0.3s;
         }
 
         .menu a:hover {
-            color: #007bff;
+            color: #00b5e2;
         }
 
         #hero {
             text-align: center;
-            padding: 5rem 2rem;
-            background: linear-gradient(135deg, #1E1E1E, #2C2C2C);
-            color: #F5F5F5;
+            padding: 5rem 1.5rem;
+            background: linear-gradient(135deg, #003366, #005b96);
+            color: #fff;
         }
 
         #hero h1 {
             font-size: 3rem;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            margin-bottom: 1.2rem;
         }
 
         #hero p {
-            font-size: 1.5rem;
-            font-weight: 300;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+            font-size: 1.4rem;
         }
 
-        .functional-section {
+        .catalog-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
             padding: 3rem;
-            margin: 2rem 0;
-            background: #1E1E1E;
-            border-radius: 10px;
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
         }
 
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            font-weight: 700;
+        .catalog-item {
+            background-color: #fff;
+            width: 30%;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
         }
 
-        form {
-            display: grid;
-            gap: 1.5rem;
+        .catalog-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .catalog-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .catalog-item h3 {
+            font-size: 1.5rem;
+            padding: 1.5rem;
+            background-color: #001F3D;
+            color: #fff;
+            margin: 0;
+        }
+
+        .catalog-item p {
+            padding: 1.5rem;
+            font-size: 1rem;
+        }
+
+        .contact-section {
+            background-color: #f9f9f9;
+            padding: 4rem 1.5rem;
+        }
+
+        .contact-form {
             max-width: 600px;
             margin: 0 auto;
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
         }
 
         .form-group label {
-            font-weight: bold;
-            margin-bottom: 0.5rem;
-            color: #B0B0B0;
-        }
-
-        input, select, textarea, button {
-            padding: 1rem;
             font-size: 1.1rem;
-            border: 2px solid #444444;
-            border-radius: 8px;
-            background-color: #2A2A2A;
-            color: #F5F5F5;
+            font-weight: 600;
         }
 
-        input:focus, select:focus, textarea:focus {
-            border-color: #007bff;
-            outline: none;
+        input, textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
         }
 
         button {
-            background-color: #007bff;
+            background-color: #00b5e2;
             color: white;
+            padding: 1rem 2rem;
             border: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
             cursor: pointer;
-            font-weight: bold;
-            transition: background-color 0.3s, transform 0.2s;
+            transition: background-color 0.3s;
         }
 
         button:hover {
-            background-color: #0056b3;
-            transform: scale(1.05);
-        }
-
-        .catalog-item, .manufacturer, article {
-            margin-bottom: 2rem;
-            padding: 1.5rem;
-            border: 1px solid #444444;
-            border-radius: 8px;
-            background-color: #2C2C2C;
+            background-color: #008bb2;
         }
 
         footer {
+            background-color: #003366;
+            color: #fff;
             text-align: center;
             padding: 2rem;
-            background-color: #121212;
-            color: #F5F5F5;
-            border-top: 1px solid #444444;
         }
 
         footer p {
             margin: 0;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
         }
     </style>
 </head>
 <body>
     <header>
+        <div class="logo">Industrial Equipment Solutions</div>
         <nav>
-            <div class="logo">Industrial Safety Solutions</div>
             <ul class="menu">
-                <li><a href="#search">Search</a></li>
+                <li><a href="#hero">Home</a></li>
                 <li><a href="#catalog">Catalog</a></li>
-                <li><a href="#manufacturers">Manufacturers</a></li>
-                <li><a href="#technical-info">Technical Info</a></li>
-                <li><a href="#news">News</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="#knowledge">Knowledge Base</a></li>
+                <li><a href="#about">About</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="hero">
-            <h1>Your Partner in Industrial Safety</h1>
-            <p>Explore top-rated fire and explosion protection systems for industries worldwide.</p>
-        </section>
+    <section id="hero">
+        <h1>Industry-leading Fire and Explosion Protection Equipment</h1>
+        <p>Providing top-quality solutions for a safer industrial environment.</p>
+    </section>
 
-        <section id="search" class="functional-section">
-            <h2>Search System</h2>
-            <form>
-                <div class="form-group">
-                    <label for="category">Category:</label>
-                    <select id="category">
-                        <option value="sugar">Sugar</option>
-                        <option value="grain">Grain</option>
-                        <option value="wood">Wood</option>
-                    </select>
-                </div>
+    <section id="catalog" class="catalog-section">
+        <div class="catalog-item">
+            <img src="https://via.placeholder.com/400x300" alt="Fire Protection System">
+            <h3>Fire Protection Systems</h3>
+            <p>High-quality fire suppression systems designed for maximum efficiency in critical environments.</p>
+        </div>
 
-                <div class="form-group">
-                    <label for="manufacturer">Manufacturer:</label>
-                    <input type="text" id="manufacturer">
-                </div>
+        <div class="catalog-item">
+            <img src="https://via.placeholder.com/400x300" alt="Explosion Protection Equipment">
+            <h3>Explosion Protection Equipment</h3>
+            <p>Advanced explosion protection for manufacturing environments to prevent disasters.</p>
+        </div>
 
-                <div class="form-group">
-                    <label for="price-range">Price Range:</label>
-                    <input type="text" id="price-range">
-                </div>
+        <div class="catalog-item">
+            <img src="https://via.placeholder.com/400x300" alt="Ventilation Systems">
+            <h3>Industrial Ventilation Systems</h3>
+            <p>Ensure proper airflow and maintain safe work conditions with our ventilation systems.</p>
+        </div>
+    </section>
 
-                <button type="submit">Search</button>
-            </form>
-        </section>
-
-        <section id="catalog" class="functional-section">
-            <h2>Product Catalog</h2>
-            <div class="catalog-item">
-                <h3>Product Name</h3>
-                <p>Detailed description...</p>
-                <button>View Details</button>
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" required>
             </div>
-        </section>
 
-        <section id="manufacturers" class="functional-section">
-            <h2>Manufacturers</h2>
-            <div class="manufacturer">
-                <h3>Manufacturer Name</h3>
-                <p>Details about the manufacturer...</p>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" required>
             </div>
-        </section>
 
-        <section id="technical-info" class="functional-section">
-            <h2>Technical Information</h2>
-            <ul>
-                <li><a href="#">Normative Documents</a></li>
-                <li><a href="#">Installation Instructions</a></li>
-                <li><a href="#">Parts Catalogs</a></li>
-            </ul>
-        </section>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" required></textarea>
+            </div>
 
-        <section id="news" class="functional-section">
-            <h2>Industry News</h2>
-            <article>
-                <h3>Latest Standards Update</h3>
-                <p>Details about the news...</p>
-            </article>
-        </section>
-
-        <section id="contact" class="functional-section">
-            <h2>Contact Us</h2>
-            <form>
-                <div class="form-group">
-                    <label for="name">Your Name:</label>
-                    <input type="text" id="name">
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Your Email:</label>
-                    <input type="email" id="email">
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Your Message:</label>
-                    <textarea id="message"></textarea>
-                </div>
-
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-
-        <section id="knowledge" class="functional-section">
-            <h2>Knowledge Base</h2>
-            <ul>
-                <li><a href="#">Technical Articles</a></li>
-                <li><a href="#">Video Materials</a></li>
-                <li><a href="#">FAQ</a></li>
-            </ul>
-        </section>
-    </main>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
     <footer>
-        <p>&copy; 2025 Industrial Safety Solutions. All rights reserved.</p>
+        <p>&copy; 2025 Industrial Equipment Solutions | All Rights Reserved</p>
     </footer>
 </body>
 </html>
